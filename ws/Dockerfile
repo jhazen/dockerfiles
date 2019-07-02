@@ -1,6 +1,6 @@
-From centos:7
+From archlinux/base
 
-RUN yum install -y vim git
+RUN yes | pacman -Sy vim git
 
 WORKDIR /ws
 CMD ["/bin/bash"]
