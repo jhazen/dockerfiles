@@ -7,7 +7,7 @@ RUN apt-get -y install libc6-dbg gdb valgrind
 RUN apt-get update
 RUN apt-get install -y gcc-multilib
 RUN apt-get install -y python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential wget
-RUN apt-get -y install curl tcpdump quagga openjdk-8-jdk netcat
+RUN apt-get -y install curl tcpdump quagga openjdk-8-jdk netcat nmap dnsutils mtr iperf
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y apt-utils \
