@@ -31,6 +31,7 @@ RUN apt-get update && \
                        ffmpeg \
                        crunch \
                        cewl \
+                       neovim \
                        sonic-visualiser \
                        xxd \
                        atomicparsley && \
