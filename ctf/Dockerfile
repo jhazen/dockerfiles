@@ -42,7 +42,7 @@ RUN apt-get update && \
 RUN git clone https://github.com/longld/peda.git ~/.peda
 RUN echo "source ~/.peda/peda.py" >> ~/.gdbinit
 RUN git clone https://github.com/jhazen/dot-files ~/.dot-files
-RUN cd ~/.dot-files && ./install.sh bash
+RUN cd ~/.dot-files && ./install.sh bash vim
 RUN git clone https://github.com/radare/radare2 /tmp/radare2
 RUN cd /tmp/radare2 && ./sys/install.sh
 WORKDIR /data
